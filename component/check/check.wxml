@@ -1,0 +1,6 @@
+<!-- 这是自定义组件的内部WXML结构 -->
+<view class="checkbox" bindtap="onTap">
+	<image src="{{innercheck?'../../images/check1.png':'../../images/check0.png'}}" bindtap="check"></image>
+	{{innerText}}
+</view>
+<slot></slot>

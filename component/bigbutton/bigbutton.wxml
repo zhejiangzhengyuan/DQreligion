@@ -1,0 +1,5 @@
+<!-- 这是自定义组件的内部WXML结构 -->
+<button class="inner" hover-stay-time="{{timeout}}" bindtap="onTap">
+  {{innerText}}
+</button>
+<slot></slot>

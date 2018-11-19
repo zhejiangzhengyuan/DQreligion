@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/notification/notification",
+    "pages/mainmenu/mainmenu",
+    "pages/saftymess/saftymess",
+    "pages/calendar1/calendar1",
+    "pages/saftydetils/saftydetils",
+    "pages/infodetail/infodetail",
+    "pages/update/update"
+  ],
+  "window": {
+    "backgroundTextStyle": "right",
+    "navigationBarBackgroundColor": "#CDA500",
+    "navigationBarTitleText": "宗教管理小程序",
+    "navigationBarTextStyle": "#f9f9f9",
+    "pageOrientation": "auto"
+  },
+  "networkTimeout": {
+    "request": 5000
+  }
+}

@@ -1,0 +1,37 @@
+/* component/saftlist/saftlist.wxss */
+text{
+	display: block;
+}
+view .listitem{
+	border: solid lightgray 1px;
+	padding: 5rpx;
+	margin: 15rpx;
+	margin-left: 40rpx;
+	margin-right: 40rpx;
+	border-radius: 15rpx;
+	background-color: white;
+} 
+.pla{
+	font-size: 18px;
+	display: inline-block;
+}
+.aut{
+	font-size: 14px;
+	color: #888888;
+	display: inline-block;
+}
+.tim{
+	font-size: 14px;
+	color: #888888;
+	display: inline-block;
+	width: 50vw;
+	padding-right: 20rpx;
+}
+.pro{
+	font-size: 14px;
+	display: inline-block;
+}
+.sta{
+	font-size: 14px;
+	display: inline-block;
+}

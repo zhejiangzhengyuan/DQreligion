@@ -1,0 +1,70 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.8",
+	"appid": "wxa265e5bc88e5357e",
+	"projectname": "DQ%E5%AE%97%E6%95%99",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "菜单界面",
+					"pathName": "pages/update/update",
+					"query": ""
+				}
+			]
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "菜单界面",
+					"pathName": "pages/mainmenu/mainmenu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "通知列表",
+					"pathName": "pages/notification/notification",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "拍照",
+					"pathName": "pages/update/update",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "安全检查",
+					"pathName": "pages/saftymess/saftymess"
+				}
+			]
+		}
+	}
+}

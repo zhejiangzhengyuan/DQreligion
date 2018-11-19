@@ -1,0 +1,9 @@
+<!--component/saftlist/saftlist.wxml-->
+<view class="listitem">
+	<text class="pla">{{place}}</text>
+	<text class="pro">{{problem}}</text>
+	<view></view>
+	<text class="tim">{{time}}</text>	
+	<text class="aut">{{author}}</text>
+	<text class="sta">{{status}}</text>
+</view>

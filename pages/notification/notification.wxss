@@ -1,0 +1,120 @@
+
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+view,picker,button{
+	font-size: 13px;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.logo{
+	width:13vw;
+	height: 7.5vh;
+	display: inline-block;
+	margin-top: 1.5vh;
+}
+.menu_header{
+	height: 10.5vh;
+	width: 100vw;
+	/* background: -webkit-gradient(linear, 0% 20%, 0% 800%, from(#336699), to(#fff), color-stop(.1,#479AC7)); */
+  border: 1px solid #ccc;
+}
+.menu_header button{
+	width: 6.4vw;
+	height: 3.6vh;
+	display: inline-block;
+}
+button{
+	float: right;
+}
+
+picker{
+	/* height: 10vh;
+	width: 10vw; */
+	/* border: 1px solid black; */
+  display: inline-block;
+}
+.view_hide{ 
+ display: none; 
+} 
+.view_show{ 
+ display: block; 
+ height: 20vh;
+ width: 100vw;
+ position: absolute;
+ left: 0;
+ top: 5vh;
+ background-color: #f2f2f2;
+}
+.notiHead{
+	width: 50vw;
+	text-align: center;
+}
+.date-box{
+	display: block;
+	margin-top: 4.1vh;
+}
+.date-box .inner{
+	display: inline-block;
+	height: 5vh;
+	background-color: #fff;
+	color: #aaa;
+	height: 3.3vh;
+	width: 33vw;
+	border-radius: 0.67vh;
+}
+.zhi{
+	color: 7d7d7d;
+}

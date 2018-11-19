@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="menu_main">
+		  <menu menuSrc="../../images/10.png" menuText="通知" bindtap='jump'></menu>
+			<menu menuSrc="../../images/0.png" menuText="平安报送" ></menu>
+			<menu menuSrc="../../images/1.png" menuText="安全检查" bindtap='jumpSafeCheck' ></menu>
+			<menu menuSrc="../../images/2.png" menuText="情况报告" bindtap='jumpUpDate' ></menu>
+			<menu menuSrc="../../images/4.png" menuText="美丽场所" ></menu>
+			<menu menuSrc="../../images/5.png" menuText="财务规范" ></menu>
+			<menu menuSrc="../../images/6.png" menuText="请销假" ></menu>
+			<menu menuSrc="../../images/8.png" menuText="人员信息" ></menu>
+			<menu menuSrc="../../images/3.png" menuText="任务统计" ></menu>
+			<menu menuSrc="../../images/SXT.png" menuText="实时监控" ></menu>
+	</view>
+</view>

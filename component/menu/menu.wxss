@@ -1,0 +1,13 @@
+image{
+	width: 13.3vw;
+	height: 7.5vh;
+}
+text{
+	display: block;
+	font-size: 4vw;
+	text-align: center;
+}
+view{
+	display: inline-block;
+	/* margin:10px 15px; */
+}

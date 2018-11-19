@@ -1,0 +1,77 @@
+<!--pages/saftymess/saftymess.wxml-->
+
+<view id="pickers">
+	<view class="section_nav">
+		<view bindtap="toggle">
+			<text>日期选择</text>
+			<image src="../../images/sct.png"></image>
+		</view>
+		<view>
+			<picker bindchange="bindPickerChange" value="{{listname}}" range="{{array}}">
+				<view class="picker">
+					{{array[listname]}}
+				</view>
+			</picker>
+			<image src="../../images/sct.png" class="imgleft"></image>
+		</view>
+	</view>
+	<view wx:if="{{show}}" id="timepickers">
+		<picker mode="date" value="{{date}}" bindchange="bindDateChange2">
+			<view class="picker">
+				{{date}}
+			</view>
+		</picker>
+		<label>-</label>
+		<picker mode="date" value="{{dates}}" bindchange="bindDateChange">
+			<view class="picker">
+				{{dates}}
+			</view>
+		</picker>
+		<view></view>
+		<button bindtap="getlocal">确定</button>
+		<view class="spaces"></view>
+		<button>重置</button>
+	</view>
+
+	
+</view>
+<view id="tables">
+	<view wx:for="{{infolist}}" wx-for-index="index" wx-for-item="item" wx:key="no">
+		<saftlist place="{{item.SiteName}}" 
+		          author="{{item.RealName}}" 
+							time="{{item.Time}}" 
+							problem="{{item.Problem1}}"
+	         	  data-detils="{{item}}"
+							status="{{item.State}}"
+							bindtap="getdetils" 
+							wx:if="{{listname=='0'}}">
+		</saftlist>
+		<saftlist place="{{item.SiteName}}" 
+		          author="{{item.RealName}}" 
+							time="{{item.Time}}" 
+							problem="{{item.Problem1}}"
+		          data-detils="{{item}}" 
+							status="{{item.State}}"
+							bindtap="getdetils" 
+							wx:if="{{listname=='1'&&item.State=='未整改'}}">
+		</saftlist>
+		<saftlist place="{{item.SiteName}}" 
+		          author="{{item.RealName}}" 
+							time="{{item.Time}}" 
+							problem="{{item.Problem1}}"
+		          data-detils="{{item}}" 
+							status="{{item.State}}"
+							bindtap="getdetils" 
+							wx:if="{{listname=='2'&&item.State=='已整改'}}">
+		</saftlist>
+		<saftlist place="{{item.SiteName}}" 
+		          author="{{item.RealName}}" 
+							time="{{item.Time}}" 
+							problem="{{item.Problem1}}"
+							status="{{item.State}}"
+		          data-detils="{{item}}" 
+							bindtap="getdetils" 
+							wx:if="{{listname=='3'&&item.State=='无问题'}}">
+		</saftlist>
+	</view>
+</view>

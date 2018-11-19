@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"menu": "/component/menu/menu",
+		"infoContent": "/component/infoContent/infoContent"
+	},
+	"navigationBarTitleText": "通知列表"
+}

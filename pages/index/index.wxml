@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<image class="bgcolor" src="../../images/bgimg.jpg"></image>
+<view class="container">	
+	<view class="userinfo">
+		<view class="motobox">
+			<image src="{{imgUrl}}" class="userinfo-avatar"></image>
+		</view>
+		<view class="inputbox">
+			<view class="inputline">
+				<image src="../../images/log-name.png"></image>
+				<input id="username" bindinput="bindKeyInput" value="{{username}}" placeholder="请输入用户名"/>
+			</view>
+			<view class="inputline">
+				<image src="../../images/log-pass.png"></image>
+				<input id="password" bindinput="bindKeyInput" value="{{password}}" placeholder="请输入密码" password="true"/>
+			</view>	
+			<check inner-text="记住密码" innercheck="{{check}}" bindcustomevent="check"></check>
+			<bigbutton class="button" inner-text="登录" bindcustomevent="login"></bigbutton>
+		</view>
+	</view>
+	<view class="hint">@2018 浙江正元地理信息有限责任公司 版权所有</view>
+</view>

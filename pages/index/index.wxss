@@ -1,0 +1,74 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bgcolor{
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+}
+.userinfo .motobox{
+	margin-bottom: 20rpx;
+}
+.moto{
+	color: #FFA500;
+	font-size: xx-large;
+}
+.userinfo-avatar {
+  width: 350rpx;
+  height: 70rpx;
+  position: relative;
+	right: 100rpx;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+.usermotto {
+  margin-top: 200rpx;
+}
+.inputbox{
+	margin-top: 10rpx;
+	position: relative;
+	top: 100rpx;
+}
+.inputbox text{
+	color: #FAFAD2;
+	margin:0rpx 20rpx;
+	display: inline-block;
+}
+.inputbox .inputline{
+	background-color: rgba(100,100,100,0.6);
+	border-radius: 50rpx;
+	padding: 10rpx;
+	width: 600rpx;
+	margin: 20rpx;
+	padding-bottom: 10rpx;
+	
+}
+.inputbox .inputline image{
+	width: 40rpx;
+	height: 40rpx;
+	padding-right: 10rpx;
+	border-right:thin double #777777;
+}
+.inputbox input{
+	color: #FAFAD2;
+	width: 500rpx;
+	float: right;
+	display: inline-block;
+	font-size: 30rpx;
+}
+.button{
+	position: relative;
+	top: 50rpx;
+}
+.hint{
+	font-size: 23rpx;
+	position: relative;
+	top: 250rpx;
+	color: #777777;
+	width: 500rpx;
+}

@@ -1,0 +1,4 @@
+<view class="view"> 
+	<mycamera ctx="{{ctx}}"></mycamera>
+</view>
+

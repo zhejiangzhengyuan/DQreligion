@@ -1,0 +1,4 @@
+<view>
+	<image src="{{menuSrc}}"></image>	
+	<text>{{menuText}}</text>
+</view>

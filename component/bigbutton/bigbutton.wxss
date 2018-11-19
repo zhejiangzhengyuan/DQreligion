@@ -1,0 +1,8 @@
+/* 这里的样式只应用于这个自定义组件 */
+.inner {
+	margin: 40rpx;
+	width: 600rpx;
+	color: #FFFFFF;
+	background: linear-gradient(rgb(241,210,112), rgb(205,165,0));
+	border-radius: 50rpx;
+}

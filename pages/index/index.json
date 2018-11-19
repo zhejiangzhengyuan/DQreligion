@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "bigbutton": "../../component/bigbutton/bigbutton",
+	"check": "../../component/check/check"
+  }
+}

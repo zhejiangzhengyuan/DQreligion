@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"saftlist": "/component/saftlist/saftlist"
+	},
+	"navigationBarTitleText": "安全检查"
+	
+}

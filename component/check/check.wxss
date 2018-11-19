@@ -1,0 +1,14 @@
+/* component/check/check.wxss */
+.checkbox{
+	margin: 20rpx;
+	display: flex;
+	align-items:Center;
+	color: #FFFFFF;
+	font-family: '黑体';
+}
+.checkbox image{
+	margin-top: 10rpx;
+	margin-right: 20rpx;
+	width: 50rpx;
+	height: 50rpx;
+}

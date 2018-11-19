@@ -1,0 +1,6 @@
+{
+	"usingComponents": {
+		"menu": "/component/menu/menu"
+		
+	}
+}
