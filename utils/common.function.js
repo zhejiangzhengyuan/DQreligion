@@ -11,6 +11,17 @@ function uploadFile(url, filePath, name, formData = { openid: "test" }) {
 		wx.uploadFile(opts);
 	});
 }
+/* 获取保存在本地的用户信息 */
+function getUserInfo(){
+	var usr = wx.getStorageSync('userinfo');
+	if(usr != ''){
+		usr = JSON.parse(usr)
+	}else{
+		usr = {}
+	}
+	return usr;
+}
 module.exports = {
-	uploadFile: uploadFile
+	uploadFile: uploadFile,
+	getUserInfo: getUserInfo
 }
