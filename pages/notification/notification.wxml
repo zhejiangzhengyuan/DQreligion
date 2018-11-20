@@ -2,10 +2,10 @@
 	<!-- 时间选择 -->
 	<view>
 		<view class="notiHead">
-			<view bindtap="boxopen">日期选择</view>
-			<view wx:if="{{boxOpen==true}}">▼</view>
-			<view wx:else>▲</view>
-			<view class="{{(boxOpen==true)?'view_hide':'view_show'}}">
+			<view bindtap="boxopen" class="boxopen">日期选择</view>
+			<view wx:if="{{boxOpen==true}}" class="tri" style="margin-left: 10rpx;">▼</view>
+			<view wx:else class="tri" style="margin-left: 10rpx;">▲</view>
+			<view class="{{(boxOpen==true)?'_hide':'_show'}}">
 				<view class="date-box">
 					<view class="inner">
 						<picker mode="date" value="{{date}}" bindchange="bindDateChange">
@@ -23,35 +23,33 @@
 						</picker>
 					</view>
 				</view>			
-				<view  bindtap='infoList'>确定</view>
-				<view>重置</view>
+				<view  bindtap='infoList' class="btn btnSure">确定</view>
+				<view class="btn btnNew" bindtap="dateNew">重置</view>
 			</view>			
 		</view>
 		<view class="notiHead">
 			<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-			<view class="picker">
+			<view class="picker" class="tri">
 				{{array[index]}}
 			</view>
-			<view>▼</view>
+			<view class="tri" style="margin-left: 10rpx;">▼</view>
 			</picker>
 		</view>
 	</view>
 	
-	
-	<!-- <view>
-		<button bindtap='infoList'>查询通知</button>		
-	</view> -->
 	<!-- 消息列表 -->
-	<view wx:for="{{infolist}}" wx-for-index="index" wx-for-item="item" wx:key=yes">	
+	<view class="listBox">
+		<view wx:for="{{infolist}}" wx-for-index="index" wx-for-item="item" wx:key=yes" id="listContent" class="{{(item.UserName==usrname)?'view_show':(showView?'view_show' : 'view_hide')}}">	
 			<infoContent 
 						title="{{item.Title}}"
 						autor="{{item.RealName}}" 
 						time="{{item.Time}}" 
 						unread="{{item.Unread}}" 
-						bindtap="infoDetail" id="{{index}}" 
-						class="{{(item.UserName==usrname)?'view_show':(showView?'view_show' : 'view_hide')}}">
-			</infoContent>	
-			
+						bindtap="infoDetail" id="{{index}}">
+			</infoContent>			
+		</view>
+	
 	</view>
+
 </view>
 	 

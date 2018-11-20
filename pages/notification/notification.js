@@ -21,7 +21,7 @@ Page({
 		boxOpen: true,
 		date:"请选择起始时间",
 		date1:"请选择结束时间",
-		boxAll: true
+		boxAll: true,
 	},
 	onLoad: function(options) {
 		var that = this
@@ -74,6 +74,9 @@ Page({
 		var that = this
 		that.getInformByTime(that.data.datas)
 		console.log(that.data.usrname)
+		that.setData({
+			boxOpen: (!that.data.boxOpen)
+		})
 	},
 	getInformByTime: function(usr) {
 		var that = this
@@ -121,6 +124,11 @@ Page({
 						var arr = info.match(/\[(.*?)\]/g)
 						arr = JSON.parse(arr[0])
 						console.log(arr)
+						for(var i =0;i<arr.length;i++){
+							var a=arr[i].Time.split("T")
+							var b = a[1].split(".")
+							arr[i].Time=" "+a[0]+" "+b[0]
+						}
 						that.setData({
 							infolist: arr.reverse()
 						})
@@ -169,6 +177,13 @@ Page({
 		var that=this
 		that.setData({
 			boxOpen: (!that.data.boxOpen)
+		})
+	},
+	dateNew:function(){
+		var that = this
+		that.setData({
+			date:"请选择起始时间",
+			date1:"请选择结束时间",
 		})
 	}
 })

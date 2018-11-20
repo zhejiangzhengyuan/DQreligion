@@ -1,12 +1,19 @@
-<view>
+<view class="textOut">
 	<view>
-		<text>{{title}}</text>
-		<text>{{autor}}</text>
-		<text>{{time}}</text>
+		<view>
+			<text class="_title">{{title}}</text>
+		</view>
+		
 	</view>
-	<view>
-		<text>未读：</text>
-		<text>{{unread}}</text>
-		<text>人</text>
+	<view class="textBottom">
+		<view>
+			<text>{{autor}}</text>
+			<text>{{time}}</text>
+		</view>
+		<view>
+			<text>未读：</text>
+			<text>{{unread}}</text>
+			<text>人</text>
+		</view>		
 	</view>
 </view>

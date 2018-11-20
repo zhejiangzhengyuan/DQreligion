@@ -1,1 +1,27 @@
 /* component/infoContent/infoContent.wxss */
+.textBottom view{
+	display: inline-block;
+}
+.textBottom view:last-child{
+	float: right;
+}
+.textOut{
+	width:685rpx;
+	margin-left:38rpx;
+	color: #888;
+}
+.textOut ._title{
+	display: block;
+	color: #333;
+	font-size: 17px;
+	overflow: hidden;
+	display: block;
+    font-size:28rpx;
+    color:#000000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+	margin-top:50rpx;
+	margin-bottom:50rpx;
+
+}
