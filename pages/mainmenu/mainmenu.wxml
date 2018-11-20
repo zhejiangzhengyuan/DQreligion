@@ -8,14 +8,21 @@
 				<text >{{userInfo.RealName}}</text>
 				<text class="Duties">所属单位: {{userInfo.Duties}}</text>
 			</view>	
-			<image class="right" src="../../images/menu_right.png"></image>
+			<image class="right" bindtap="jumpSetting" src="../../images/menu_right.png"></image>
 		</view>
-		<view>
-			
+		<view class="buttonbox">
+			<image class="button" src="../../images/menu_23.png"></image>
+			<image class="button" src="../../images/menu_22.png"></image>
+			<image class="button" src="../../images/menu_21.png"></image>
+			<view>
+				<text class="btt">切换用户</text>
+				<text class="btt">修改密码</text>
+				<text class="btt">退出登录</text>
+			</view>
 		</view>
 	</view>
 	<view class="menu_main">
-		  <menu menuSrc="../../images/menu_01.png" menuText="通知" bindtap='jump'></menu>
+		  <menu menuSrc="../../images/menu_01.png" menuText="通知中心" bindtap='jump'></menu>
 			<menu menuSrc="../../images/menu_02.png" menuText="平安报送" ></menu>
 			<menu menuSrc="../../images/menu_03.png" menuText="安全检查" bindtap='jumpSafeCheck' ></menu>
 			<menu menuSrc="../../images/menu_04.png" menuText="情况报告" bindtap='jumpUpDate' ></menu>

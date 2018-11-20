@@ -29,6 +29,12 @@ Page({
 			url:'../update/update'
 		})
 	},
+	jumpSetting:function(){
+		
+	},
+	jumpUser:function(){
+		
+	},
   onLoad: function () {
 		var usr = comfun.getUserInfo()
 		if(usr == {}){

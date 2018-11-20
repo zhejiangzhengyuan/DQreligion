@@ -1,13 +1,13 @@
 .menu_button{
 	display: inline-block;
-	width: 200rpx;
-	height: 200rpx;
-	padding: 15rpx 25rpx;
+	width: 180rpx;
+	height: 180rpx;
+	padding: 15rpx 35rpx;
 }
 .menu_button image{
-	margin: 0 35rpx;
-	width: 130rpx;
-	height: 130rpx;
+	margin: 0 40rpx;
+	width: 100rpx;
+	height: 100rpx;
 }
 .menu_button text{
 	display: block;
