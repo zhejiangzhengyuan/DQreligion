@@ -1,5 +1,4 @@
 var saftdetils = {};
-
 module.exports = {
-	saftdetils : saftdetils,
+	saftdetils : saftdetils
 }
